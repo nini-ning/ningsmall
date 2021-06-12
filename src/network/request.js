@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-03 17:16:56
- * @LastEditTime: 2021-06-03 17:38:56
+ * @LastEditTime: 2021-06-07 00:17:44
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \day9\supermall\src\network\request.js
@@ -21,6 +21,7 @@ export function request(config){
         //console.log(err)
     })
     instance.interceptors.response.use(res=>{
+        //console.log(res);
         return res.data
     },err=>{
         console.log(err)

@@ -1,7 +1,7 @@
 /*
  * @Author: your name
  * @Date: 2021-06-03 17:22:04
- * @LastEditTime: 2021-06-03 18:11:14
+ * @LastEditTime: 2021-06-04 14:32:01
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \day9\supermall\src\network\home.js
@@ -10,6 +10,15 @@ import {request} from "../network/request";
 export function getHomeMultidata() {
   return request({
     url: '/home/multidata'
+  })
+}
+export function getHomeGoods(type,page){
+  return request({
+    url:'/home/data',
+    params:{
+      type,
+      page
+    }
   })
 }
 

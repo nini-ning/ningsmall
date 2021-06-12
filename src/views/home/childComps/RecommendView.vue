@@ -1,7 +1,7 @@
 <!--
  * @Author: your name
  * @Date: 2021-06-03 19:50:32
- * @LastEditTime: 2021-06-03 20:06:41
+ * @LastEditTime: 2021-06-07 12:37:20
  * @LastEditors: Please set LastEditors
  * @Description: In User Settings Edit
  * @FilePath: \day9\supermall\src\views\home\childComps\RecommendView.vue
@@ -31,7 +31,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
     .recommend{
         display: flex;
         width: 100%;
